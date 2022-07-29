@@ -1,7 +1,7 @@
 /**
- * @class Gamepad
+ * @class Lib
  */
-class Gamepad {
+class Lib {
   /** @static */
   static CONNECTED = "connected";
 
@@ -89,7 +89,7 @@ class Gamepad {
    * @returns {boolean}
    */
   connected() {
-    return this.#state === Gamepad.CONNECTED;
+    return this.#state === Lib.CONNECTED;
   }
 
   /**
@@ -114,7 +114,7 @@ class Gamepad {
 
     for (let button of gamepad.buttons) {
       let index = gamepad.buttons.indexOf(button);
-      this.#btnstate[Gamepad.XBOX_BTN_MAP[index]] = button;
+      this.#btnstate[Lib.XBOX_BTN_MAP[index]] = button;
     }
 
     return retVal;
@@ -126,7 +126,7 @@ class Gamepad {
    * @access public
    */
   connect() {
-    this.#state = Gamepad.CONNECTED;
+    this.#state = Lib.CONNECTED;
   }
 
   /**
@@ -135,8 +135,8 @@ class Gamepad {
    * @access public
    */
   disconnect() {
-    this.#state = Gamepad.DISCONNECTED;
+    this.#state = Lib.DISCONNECTED;
   }
 }
 
-export default Gamepad;
+export default Lib;

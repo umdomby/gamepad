@@ -1,6 +1,6 @@
-# Gamepad API + Xbox Wireless Controller
+# Lib API + Xbox Wireless Controller
 
-An exploration of using an Xbox Wireless Controller using the [Gamepad API](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API). Information like button presses are rendered using [requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame) inside a [React](https://reactjs.org/) app.
+An exploration of using an Xbox Wireless Controller using the [Lib API](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API). Information like button presses are rendered using [requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame) inside a [React](https://reactjs.org/) app.
 
 ## Controller Hardware
 
